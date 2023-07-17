@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Lipstick",
+    "description": "Lipstick is a cosmetic product used to apply coloration and texture to lips, often made of wax and oil. Different pigments are used to produce color, and minerals such as silica may be used to provide texture.",
+    "price": "40.00"
+  },
+  {
+    "id": 2,
+    "name": "Powders",
+    "description": "Face powder is a cosmetic product applied to the face to serve different functions, typically to beautify the face. ",
+    "price": "30.00"
+  },
+  {
+    "id": 3,
+    "name": "Face cream",
+    "description": "Face cream is used cosmetically (mostly by women) for softening and cleaning the skin",
+    "price": "50.00"
+  }
+]

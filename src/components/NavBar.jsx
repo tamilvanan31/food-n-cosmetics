@@ -1,9 +1,12 @@
 import {Link, useMatch, useResolvedPath } from "react-router-dom";
+import logo from './../assets/brand-logo-preview.png'
 const NavBar = () => {
 
     return (
         <nav className="nav">
-            <Link to="/" className="title">Food and cosmetics</Link>
+            <Link to="/" className="title">
+                <img src={logo} width="180px" height="85px"/>
+            </Link>
             <ul>
                 <CustomLink to="/pricing">Pricing</CustomLink>
                 <CustomLink to="/about">About</CustomLink>

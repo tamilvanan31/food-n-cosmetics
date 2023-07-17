@@ -5,7 +5,7 @@ import Home from "./components/pages/Home.jsx";
 import {Route, Routes} from "react-router-dom";
 
 function App() {
-
+    document.title="Food and cosmetics"
   return <>
     <NavBar />
       <div className="container">
