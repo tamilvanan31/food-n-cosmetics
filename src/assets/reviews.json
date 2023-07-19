@@ -1,0 +1,40 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "time": "2 months ago",
+      "review": "Great service! The staff was friendly and helpful. Will definitely come back."
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "time": "4 months ago",
+      "review": "Had a wonderful experience here. The food was delicious, and the atmosphere was cozy."
+    },
+    {
+      "id": 3,
+      "name": "David Johnson",
+      "time": "6 months ago",
+      "review": "Amazing place! The live music was fantastic, and the drinks were top-notch."
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "time": "3 months ago",
+      "review": "The customer service was outstanding. The staff went above and beyond to make my experience memorable."
+    },
+    {
+      "id": 5,
+      "name": "Michael Anderson",
+      "time": "5 months ago",
+      "review": "I highly recommend this place. The ambiance was delightful, and the menu had a great variety of options."
+    },
+    {
+      "id": 6,
+      "name": "Sarah Thompson",
+      "time": "8 months ago",
+      "review": "This is my go-to spot. The quality of the food is consistently excellent, and the prices are reasonable."
+    }
+  ]
+}

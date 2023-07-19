@@ -73,6 +73,28 @@ body {
     flex-direction: row;
 }
 
+.review-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+
+.review-card {
+    text-align: center;
+    min-width: 60%;
+    height: 200px;
+    height: 60%;
+    border: 1px solid black;
+}
+
+.review {
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: rgb(253, 219, 145);
+}
+
 .quote {
     font-family: Freehand;
     font-size: 35px;
