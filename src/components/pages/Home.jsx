@@ -2,6 +2,9 @@ import products from "./../../assets/products.json";
 import reviews from "./../../assets/reviews.json"
 import Product from "./Product.jsx";
 import Review from "./Review.jsx";
+import Contact from "./Contact.jsx";
+import Footer from "./Footer.jsx";
+
 
 
 const Home = () => {
@@ -24,14 +27,18 @@ const Home = () => {
                 </section>
 
                 <section>
-                    <h2>Best seller</h2>
-                    <div className="product-card">
+                    <h2>Best Seller</h2>
+                    <div className="product-cards">
                         {productList}
                     </div>
                 </section>
+                <section>
+                    <h2>Contact Us</h2>
+                    <Contact />
+                </section>
             </main>
             <footer style={{marginTop: "auto"}}>
-                <p>&copy; 2023 Cosmetics Store. All rights reserved</p>
+               <Footer />
             </footer>
         </div>
     );

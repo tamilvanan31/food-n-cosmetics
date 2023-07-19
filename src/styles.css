@@ -65,34 +65,40 @@ body {
     height: 100vh;
 }
 
-.product-card {
-    background-color: rgb(253, 219, 145);
-    text-align: left;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-}
-
-.review-cards {
+.review-cards, .product-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 10px;
     gap: 10px;
 }
 
-
-.review-card {
-    text-align: center;
-    min-width: 60%;
-    height: 200px;
-    height: 60%;
-    border: 1px solid black;
+@media screen and (max-width: 430px) {
+    .review-cards, .product-cards {
+        display: flex;
+        overflow-x: scroll;
+        gap: 10%;
+    }
 }
 
-.review {
+.review-card, .product-card {
+    text-align: center;
+    margin-bottom: 10px;
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 60%;
     padding: 1rem;
-    border: 2px solid gray;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
     background-color: rgb(253, 219, 145);
+    transition: box-shadow .3s;
+}
+
+.review-card:hover {
+    box-shadow: 0 0 40px rgba(33,33,33,.2);
+}
+
+.product-card:hover {
+    box-shadow: 0 0 40px rgba(33,33,33,.2);
 }
 
 .quote {
@@ -100,3 +106,57 @@ body {
     font-size: 35px;
 }
 
+.contact-us {
+    padding: 1rem;
+    font-family: sans-serif;
+    background: #1a1a1a;
+}
+
+form {
+    margin: 5rem auto 0;
+    width: 24rem;
+}
+
+input {
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+    width: inherit;
+    height: 2rem;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    height: 2.5rem;
+    font-size: 1rem;
+    color: black;
+    background: rgb(253, 219, 145);
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.social-handle-list {
+    list-style: none;
+    display: flex;
+}
+
+.social-handle-item {
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+    height: 12px;              /* height of horizontal scrollbar ← You're missing this */
+    width: 10px;               /* width of vertical scrollbar */
+    border: 1px solid #d5d5d5;
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(253, 219, 145);
+}

@@ -4,14 +4,12 @@ import user from "./../../assets/images/user.jpg"
 const Review = ({name, time, review}) => {
     return (
         <div className="review-card">
-            <div className="review">
                 <div style={{textAlign: "center"}}>
                     <img src={user} width="40px" height="40px" />
                 </div>
                 <h3>{name}</h3>
                 <p>{time}</p>
                 <p>{review}</p>
-            </div>
         </div>
     )
 }

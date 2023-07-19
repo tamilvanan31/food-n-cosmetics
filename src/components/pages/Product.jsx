@@ -2,7 +2,7 @@
 const Product = ({title, description, amount}) => {
     const dollarSign = "\u0024";
     return (
-        <div>
+        <div className="product-card">
             <h3>{title}</h3>
             <p>{description}</p>
             <p>{dollarSign}{amount}</p>
